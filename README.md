@@ -2,7 +2,7 @@
 
 # Working on AMD64
 
-Fork from [quadportnick/docker-cups-airprint](https://github.com/quadportnick/docker-cups-airprint) and [chuckcharlie/docker-cups-airprint](https://github.com/chuckcharlie/docker-cups-airprint) and [znetwork/cups-avahi-airprint] (https://hub.docker.com/r/znetwork/synology-airprint)
+Fork from [quadportnick/docker-cups-airprint](https://github.com/quadportnick/docker-cups-airprint) and [chuckcharlie/docker-cups-airprint](https://github.com/chuckcharlie/docker-cups-airprint) and [znetwork/cups-avahi-airprint](https://hub.docker.com/r/znetwork/synology-airprint)
 
 This Ubuntu-based Docker image runs a CUPS instance that is meant as an AirPrint relay for printers that are already on the network but not AirPrint capable.
 * `Included drivers for printers requiring foo2hbpl2 etc. drivers like Dell C1765 etc.`
