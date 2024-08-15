@@ -1,7 +1,7 @@
 FROM ubuntu:jammy
 LABEL maintainer="znetwork@me.com"
 LABEL version="0.3"
-LABEL description="AIRPRINT FROM SYNOLOGY DSM 7 (HP, SAMSUNG, ETC)"
+LABEL description="AIRPRINT FOR DELL C1765"
 
 RUN apt-get update && apt-get install -y \
 	locales \
@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
 	libgutenprint9 \
 	libgutenprint-doc \
 	ghostscript \
-	hplip \
+	foomatic-db \
+ 	printer-driver-foo2zjs \
 	cups \
 	cups-pdf \
 	cups-client \
