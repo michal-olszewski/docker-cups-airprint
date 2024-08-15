@@ -1,14 +1,14 @@
-# michal-olszewski/cups-avahi-airprint [docker-image](<docker-repo>)
+# michalolszewski/cups-avahi-airprint [docker-image](https://hub.docker.com/r/michalolszewski/cups-avahi-airprint)
 
 # Working on AMD64
 
 Fork from [quadportnick/docker-cups-airprint](https://github.com/quadportnick/docker-cups-airprint) and [chuckcharlie/docker-cups-airprint](https://github.com/chuckcharlie/docker-cups-airprint) and [znetwork/cups-avahi-airprint] (https://hub.docker.com/r/znetwork/synology-airprint)
 
 This Ubuntu-based Docker image runs a CUPS instance that is meant as an AirPrint relay for printers that are already on the network but not AirPrint capable.
-* `Included drivers for Dell C1765`
+* `Included drivers for printers requiring foo2hbpl2 etc. drivers like Dell C1765 etc.`
 
 ## Easy run command (use username and password: admin/admin):
-```docker run --name airprint --restart unless-stopped --net host <docker-image>:latest```
+```docker run --name airprint --restart unless-stopped --net host michalolszewski/cups-avahi-airprint:latest```
 
 ### Add and setup printer:
 * CUPS will be configurable at http://[host ip]:631 using the CUPSADMIN/CUPSPASSWORD.
@@ -36,5 +36,5 @@ docker run --name cups --restart unless-stopped  --net host\
   -v <your config dir>:/config \
   -e CUPSADMIN="<username>" \
   -e CUPSPASSWORD="<password>" \
-  <docker-image>:latest
+  michalolszewski/cups-avahi-airprint:latest
 ```

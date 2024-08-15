@@ -3,7 +3,7 @@ version: '3.5'
 services:
   airprint:
     container_name: airprint
-    image: znetwork/synology-airprint:0.3
+    image: michalolszewski/cups-avahi-airprint:0.1
     build: .
     restart: always
     network_mode: "host"

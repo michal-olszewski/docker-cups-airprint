@@ -1,7 +1,9 @@
 FROM ubuntu:jammy
-LABEL maintainer="znetwork@me.com"
-LABEL version="0.3"
-LABEL description="AIRPRINT FOR DELL C1765"
+LABEL maintainer="olszewski.m.l@gmail.com"
+LABEL version="0.1"
+LABEL description="AIRPRINT FOR foo2zjs"
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
 	locales \
